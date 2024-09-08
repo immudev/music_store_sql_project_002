@@ -11,5 +11,5 @@
 ### 1. Database Setup
 
 ```sql
-CREATE DATABASE p1_retail_db;
+CREATE DATABASE music_store;
 ```
