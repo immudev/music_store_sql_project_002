@@ -63,7 +63,7 @@ LIMIT 3
 ```
 
 
-4.which city has the best customers? we would like to throw a promotional music festival in the city we mdae the most money. write a query the returns one city that have the higest sum of inoice totals. return both city name & sum of all inoice totls.
+4. which city has the best customers? we would like to throw a promotional music festival in the city we mdae the most money. write a query the returns one city that have the higest sum of inoice totals. return both city name & sum of all inoice totls.
 
 ```sql
 SELECT billing_city as city, SUM(total) as total_invoice
@@ -85,7 +85,7 @@ limit 1
 ```
 
 
-6.write to return the email, first name, last name and genre of all rock music listners. return your list ordered alph by email starting with a.
+6. write to return the email, first name, last name and genre of all rock music listners. return your list ordered alph by email starting with a.
 
 ```sql
 SELECT DISTINCT email, first_name, last_name 
