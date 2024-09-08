@@ -93,8 +93,8 @@ FROM customer
 JOIN invoice ON customer.customer_id = invoice.customer_id
 JOIN invoice_line ON invoice.invoice_id = invoice.invoice_id
 WHERE track_id IN(SELECT track_id FROM track
-									JOIN genre ON track.genre_id = genre.genre_id
-									WHERE genre.name LIKE 'Rock')
+JOIN genre ON track.genre_id = genre.genre_id
+WHERE genre.name LIKE 'Rock')
 ORDER BY email
 ```
 
@@ -135,7 +135,7 @@ JOIN album ON album.album_id = track.album_id
 JOIN artist ON artist.artist_id = album.artist_id
 GROUP BY 1
 ORDER BY 3 DESC
-	)
+)
 SELECT c.customer_id, c.first_name, c.last_name, bsa.artist_name, SUM(il.unit_price * il.quantity) AS amount_spent
 FROM invoice i
 JOIN customer c ON c.customer_id = i.customer_id
