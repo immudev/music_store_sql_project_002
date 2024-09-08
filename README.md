@@ -1,4 +1,4 @@
-# Music Store Database SQL Project 003
+# Music Store Database SQL Project 002
 
 ## Project Overview
 
